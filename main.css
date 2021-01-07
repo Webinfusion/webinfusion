@@ -1,0 +1,469 @@
+/* Slideshow container */
+.slideshow-container {
+    /* max-width: 1000px; */
+    position: relative;
+    margin: auto;
+   
+  }
+  .smallimg{
+display: none;
+  }
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+   
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+
+  .belowslides .section{
+    width: 100%;
+    display:flex;
+    min-height: 450px;
+    justify-content: space-around;
+    margin-top: 4rem;
+
+}
+.section .part{
+  
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.section .part img{
+width:25vw
+}
+.doctor{
+  margin-top: 5rem;
+  width: 100vw;
+  min-height:470px ;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+
+}
+.docpart{
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+}
+.doctor img{
+  width: 17vw;
+}
+.logobtn{
+  width: 100%;
+ min-height:350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 4rem;
+}
+.logobtn h1{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.logobtn .logos{
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ 
+}
+.logos .btnlogo {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(233, 232, 229);
+  border-radius: 150px;
+  box-shadow: 1px 1px 3px rgb(184, 181, 181);
+  margin:10px
+}
+.logos a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logos a div:hover{
+  background-color: rgb(189, 115, 3);
+}
+.logobtn a img{
+  width: 110px;
+
+}
+.specalistbg{
+  width:100vw;
+  min-height: 600px;
+  background-color: rgb(31, 77, 117);
+  margin-top: 4rem;
+}
+ .specalist {
+  width:90%;
+  height: 100%;
+  display: flex;
+ 
+align-items: center;
+margin-left: 5vw;
+margin-right: 5vw;
+justify-content: space-around;
+ 
+}
+.specalist h1{
+  color:rgb(233, 225, 225);
+  font-weight: normal;
+  font-size: 25px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+ 
+}
+.specalist .part{
+  width: 40%;
+  height:90%;
+
+ 
+  
+}
+.specalist .part div {
+  background-color: aliceblue;
+}
+ .part div p{
+  min-height: 10vh;
+}
+.specalist img{
+  width: 100%;
+}
+.bigfooter{
+  margin-top: 4rem;
+  width: 94vw;
+  /* min-height: 270px; */
+  display:flex;
+  background-color: rgb(202, 210, 218);
+  justify-content: space-around;
+  padding: 60px;
+  
+}
+.bigfooter .column{
+  display: flex;
+  flex-direction: column;
+ 
+ 
+}
+.bigfooter a{
+  height: 20px;
+  color: #2f5a7e;
+  height: 25px;
+}
+.bigfooter a:hover{
+  text-decoration: underline;
+}
+
+@media screen and (max-width:1500px){
+
+  
+  .specalistbg{
+min-height: 500px;
+  }
+  .doctor{
+    min-height: 430px;
+
+}
+.bigfooter{
+  width: 100vw;
+ 
+}
+
+}
+@media screen and (max-width:1200px){
+
+  .belowslides .section{
+   min-height: 350px;
+  }
+  .specalistbg{
+min-height: 450px;
+  }
+  .doctor{
+    min-height: 330px;
+
+}
+.docpart{
+  width: 95vw;
+ 
+}
+.bigfooter{
+  margin-top: 4rem;
+  width: 96vw;
+ 
+  padding: 30px;
+}
+
+
+
+}
+@media screen and (max-width:1000px){
+
+  .belowslides .section{
+   min-height: 320px;
+  }
+  .specalistbg{
+min-height: 430px;
+  }
+  .doctor{
+    min-height: 300px;
+
+}
+.bigimg{
+  display: none;
+    }
+.smallimg{
+  display: block;
+    }
+
+
+.logobtn h1{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.logobtn .logos{
+  width: 95vw;
+  
+}
+.logos .btnlogo {
+  width: 130px;
+  height: 130px;
+ 
+}
+
+
+.logobtn a img{
+  width: 100px;
+
+}
+.bigfooter{
+  margin-top: 4rem;
+  width: 98vw;
+ font-size: 14px;
+  padding: 10px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+
+}
+
+@media screen and (max-width:800px){
+  
+  .belowslides .section{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    min-height: 450px;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4rem;
+
+}
+.section .part{
+  
+    width: 350px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.section .part img{
+  width:350px
+  }
+  .doctor{
+    padding-top:30px ;
+
+  
+  }
+  .docpart{
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .doctor img{
+    width: 35vw;
+    margin:25px 25px 13px 25px
+  }
+
+  .logobtn .logos{
+    width: 90vw;
+    
+  }
+  .logos .btnlogo {
+    width: 110px;
+    height: 110px;
+   
+  }
+  .logobtn a img{
+    width: 80px;
+  
+  }
+  .logos a{
+    font-size: 13px;
+  }
+
+
+
+
+
+  .specalistbg{
+    width:100vw;
+   min-height: 810px;
+    background-color: rgb(31, 77, 117);
+    margin-top: 4rem;
+    padding-bottom: 25px;
+  }
+   .specalist {
+     height: auto;
+   flex-direction: column;
+
+   
+  }
+  .specalist h1{
+    
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+   
+  }
+  .specalist .part{
+    width: 80vw;
+    height:100%;
+  
+   
+    
+  }
+  
+  
+  .specalist img{
+    width: 100%;
+  }
+  .bigfooter{
+    margin-top: 4rem;
+    width: 100%;
+    min-height: 250px;
+    display:flex;
+    background-color: rgb(202, 210, 218);
+ 
+   
+    padding-bottom:50px ;
+    flex-wrap: wrap;
+  }
+  .bigfooter .column{
+    flex-direction: column;
+    width: 50%;
+    margin:0px 0px 40px 0px;
+   
+  }
+  .bigfooter a{
+    height: 20px;
+    color: #2f5a7e;
+  }
+  .bigfooter a:hover{
+    text-decoration: underline;
+  }
+}
+@media screen and (max-width:600px){
+  .bigfooter{
+  
+    flex-direction: column;
+   align-items: center;
+   
+   
+   
+  }
+  .bigfooter .column{
+ 
+    width: 80%;
+   
+  }
+}

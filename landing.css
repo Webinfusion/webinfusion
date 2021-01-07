@@ -1,0 +1,40 @@
+.layout{
+    width: 80vw;
+  
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.layout h1{
+    font-size: 30px;
+    margin:40px 0px 40px 0px;
+}
+.imgdiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.imgdiv img{
+    width: 30vw;
+}
+.layout p{
+    text-align: left;
+    margin: 40px;
+}
+
+@media screen and (max-width:600px){
+    .imgdiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .imgdiv img{
+        width: 50vw;
+        margin-bottom: 20px;
+    }
+    
+  }
