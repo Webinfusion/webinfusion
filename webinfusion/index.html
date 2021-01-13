@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="navbar">
+                <div class="companylogo flex-center"><img src="./triangle logo1.png" alt=""></div>
+                <div class="navmenu">
+                   <a href="">Home</a>
+                   <a href="">Services</a>
+                   <a href="">Projects</a>
+                   <!-- <a href="">About Us</a> -->
+                   <a href="">Contact Us</a>
+                  
+                   <a href="" class="call flex-center">Call Now</a>
+                </div>
+              
+            </section>
+            <div class="navdummy"></div>
+            <section class="smallnavbar">
+                <div class="sbar">
+                <div class="scomplogo"><img src="./triangle logo1.png" alt=""></div>
+                <div class="snavmenu">
+                    <button  class="menubt" onclick="clicknav()"></button>
+
+                    <div id="menubutton" class="off"><img src="https://img.icons8.com/material-two-tone/24/fa314a/menu--v1.png"/></div>
+                    <div id="back" class="off"  > <img src="https://img.icons8.com/ios-filled/50/000000/long-arrow-right.png"/> </div>
+                </div>
+                </div>
+                <div id="drop"  class="off">
+                    
+                    <a href="">home</a>
+                    <a href="">home</a>
+                    <a href="">home</a>
+                    <a href="">home</a>
+                    <a href="">home</a>
+                   
+                </div>
+               
+            </section>
+            <div class="smallnavdummy"></div>
+        </nav>
+        <div class="banner">
+            <h1>Web Design <br>& Development</h1>
+            <p>one step towards growing and digitalizing<br> your business</p>
+            <a href="" class="flex-center">Get a Quote</a>
+            <img src="./logo1.png" alt="">
+        </div>
+        <section class="services">
+        <h1 class="flex-center">Services</h1>
+        <div class="servicelogo flex-center">
+           <a href=""> <div class="spart">
+                <img src="./flyer.png" alt="">
+                <p>text</p>
+            </div>
+           </a>
+           <a href=""> <div class="spart">
+                <img src="./illustration.png" alt="">
+                <p>text</p>
+            </div>
+           </a>
+           <a href=""> <div class="spart">
+                <img src="./t-shirt.png" alt="">
+                <p>text</p>
+            </div>
+           </a>
+           <a href=""> <div class="spart">
+                <img src="./multimedia.png" alt="">
+                <p>text</p>
+            </div>
+           </a>
+        
+       
+           <a href=""> <div class="spart">
+                <img src="./flyer.png" alt="">
+                <p>text</p>
+            </div>
+           </a>
+           <a href=""> <div class="spart">
+                <img src="./illustration.png" alt="">
+                <p>text</p>
+            </div>
+           </a>
+           <a href=""> <div class="spart">
+                <img src="./t-shirt.png" alt="">
+                <p>text</p>
+            </div>
+           </a>
+           <a href=""> <div class="spart">
+                <img src="./multimedia.png" alt="">
+                <p>text</p>
+            </div>
+           </a>
+        </div>
+    </section>
+    <section class="sitetype">
+        <h1 class="flex-center">What type are you looking For!</h1>
+        <div class="plantype">
+            <div class="plan">
+                <h2 class="flex-center">Basic Website</h2>
+                <h4 class="flex-center">best solutions for small Business</h4>
+                <p  class="flex-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, minima!</p>
+                <a href="" class="flex-center">Get Quote</a>
+            </div>
+            <div class="plan">
+                <h2 class="flex-center">Basic Website</h2>
+                <h4 class="flex-center">best solutions for small Business</h4>
+                <p  class="flex-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, minima!</p>
+                <a href="" class="flex-center">Get Quote</a>
+            </div>
+            <div class="plan">
+                <h2 class="flex-center">Basic Website</h2>
+                <h4 class="flex-center">best solutions for small Business</h4>
+                <p  class="flex-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, minima!</p>
+                <a href="" class="flex-center">Get Quote</a>
+            </div>
+            <div class="plan">
+                <h2 class="flex-center">Basic Website</h2>
+                <h4 class="flex-center">best solutions for small Business</h4>
+                <p  class="flex-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, minima!</p>
+                <a href="" class="flex-center">Get Quote</a>
+            </div>
+            <div class="plan">
+                <h2 class="flex-center">Basic Website</h2>
+                <h4 class="flex-center">best solutions for small Business</h4>
+                <p  class="flex-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, minima!</p>
+                <a href="" class="flex-center">Get Quote</a>
+            </div>
+           
+        </div>
+    </section>
+    <section class="clients">
+        <h1>Clients</h1>
+        <a href="https://www.koradafurniture.com/"><img src="./KORO.png" alt=""></a>
+    </section>
+    <section class="contactus">
+        <h1>Contact Us</h1>
+     
+       
+        <div class="left-contact">
+            <a href="">mail:abcd@gmail.com</a>
+            <a href="">+91 00000 00000</a>
+            <a href="">+91 00000 00000</a>
+        </div>
+        <div class="right-contact"></div>
+    </section>
+
+    </header>
+    <script>  document.getElementById("menubt").innerHTML=document.getElementById("menubutton").innerHTML;
+    var num=1;
+    function clicknav(){
+      var clname=document.getElementById("drop");
+    
+    if(clname.className=="off"){
+      clname.className="on";
+    }
+    else{
+      clname.className="off";
+    }
+    
+    if(num === 1){
+      document.getElementById("menubt").innerHTML=document.getElementById("menubutton").innerHTML;
+      num=2;
+    }else{
+      document.getElementById("menubt").innerHTML=document.getElementById("back").innerHTML;
+      num=1;
+    }
+    
+    }
+    </script>
+</body>
+</html>
