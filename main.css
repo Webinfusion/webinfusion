@@ -98,11 +98,12 @@ display: none;
 
 
   .belowslides .section{
-    width: 100%;
+    width: 90%;
     display:flex;
-    min-height: 450px;
+    min-height: 410px;
     justify-content: space-around;
     margin-top: 4rem;
+    padding: 0px 20px;
 
 }
 .section .part{
@@ -192,6 +193,7 @@ color:#05035a
   min-height: 600px;
   background-color: #42425e;
   margin-top: 4rem;
+  padding-bottom: 30px;
 }
  .specalist {
   width:90%;
@@ -232,12 +234,11 @@ justify-content: space-around;
 }
 .bigfooter{
   margin-top: 4rem;
-  width: 94vw;
-  /* min-height: 270px; */
+  width: 100vw;
   display:flex;
   background-color: rgb(233, 239, 245);
   justify-content: space-around;
-  padding: 60px;
+  padding: 60px 10px;
   
 }
 .bigfooter .column{
@@ -255,7 +256,7 @@ justify-content: space-around;
 
 }
 .bigfooter a{
-  height: 20px;
+  min-height: 20px;
   color: #434344;
   min-height: 27px;
   margin:2px;
@@ -308,9 +309,17 @@ padding-bottom: 30px;
   padding-bottom:60px ;
 
 }
+.bigfooter .column{
+  padding:2px 5px;
+  width: 250px;
+  }
 
-
-
+  .bigfooter p{
+    font-size: 14px;
+    
+  
+  
+  }
 }
 @media screen and (max-width:1000px){
   .dot{
@@ -363,7 +372,8 @@ min-height: 430px;
   justify-content:flex-start;
 }
 .bigfooter .column{
-  margin-right: 20px;
+padding:2px 5px;
+width: 200px;
 }
 
 }
