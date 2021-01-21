@@ -224,6 +224,22 @@ justify-content: space-around;
 .specalist .part div {
   background-color: aliceblue;
 }
+.totestimonials{
+  padding:7vh 5vw ;
+  width: 90vw;
+}
+.totestimonials h1{
+ padding: 50px ;
+ font-size: 50px;
+}
+.testimonials{
+  
+  display: flex;
+  justify-content: space-around;
+}
+.testimonials img{
+  width: 35vw;
+}
  .part div p{
   min-height: 10vh;
   margin-left: 15px;
